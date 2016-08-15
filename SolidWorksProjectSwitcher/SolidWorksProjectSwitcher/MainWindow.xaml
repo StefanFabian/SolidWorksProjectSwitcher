@@ -1,0 +1,173 @@
+﻿<Window x:Class="SolidWorksProjectSwitcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:translations="clr-namespace:SolidWorksProjectSwitcher.Properties"
+        mc:Ignorable="d"
+        Icon="solidworksprojectswitcher.ico"
+        MinWidth="250"
+        Title="{x:Static translations:Resources.Title}">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4,4,4,4"/>
+            <Setter Property="Padding" Value="4"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="RootGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Border
+                x:Name="SolidWorksWarningBorder"
+                Background="LightSkyBlue"
+                BorderBrush="CornflowerBlue"
+                BorderThickness="2"
+                Margin="8"
+                Padding="20,4"
+                Visibility="Collapsed"
+                >
+                <TextBlock TextWrapping="Wrap"><Run Text="{x:Static translations:Resources.SolidWorksRunning}"/><LineBreak/><Run Text="{x:Static translations:Resources.SolidWorksRunningInfo}"/></TextBlock>
+            </Border>
+        </StackPanel>
+        <GroupBox
+            Grid.Row="1"
+            Header="{x:Static translations:Resources.CurrentSolidWorksProject}"
+            Padding="20,8"
+            >
+            <TextBlock Margin="4,8"><Run Text="{x:Static translations:Resources.Name}"/>: <Run x:Name="CurrentDirectoryRun"/></TextBlock>
+        </GroupBox>
+        <GroupBox
+            Grid.Row="2"
+            Header="{x:Static translations:Resources.OtherSolidWorksProjects}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ListView
+                    x:Name="DirectoriesListView"
+                    Grid.ColumnSpan="2"
+                    KeyUp="DirectoriesListView_KeyUp"
+                    SelectionChanged="DirectoriesListView_OnSelectionChanged"
+                    TabIndex="0"
+                    />
+                <Button
+                    x:Name="SwitchButton"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Click="SwitchButton_Click"
+                    Content="{x:Static  translations:Resources.Switch}"
+                    TabIndex="1"
+                    />
+                <Button
+                    x:Name="DeleteButton"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Click="DeleteButton_Click"
+                    Content="{x:Static translations:Resources.Delete}" TabIndex="2"
+                    />
+                <Button
+                    x:Name="SwitchAndDeleteButton"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Click="SwitchAndDeleteButton_OnClick"
+                    Content="{x:Static translations:Resources.SwitchAndDelete}"
+                    TabIndex="3"
+                    />
+            </Grid>
+        </GroupBox>
+        <Expander
+            Grid.Row="3"
+            Header="{x:Static translations:Resources.Settings}"
+            Padding="20,4,20,20" TabIndex="4"
+            >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <CheckBox
+                    x:Name="StartSolidWorksCheckBox"
+                    Grid.ColumnSpan="2"
+                    Checked="StartSolidWorksCheckBox_OnChecked"
+                    Content="{x:Static translations:Resources.StartSolidWorksAfterSwitch}"
+                    Margin="4"
+                    Unchecked="StartSolidWorksCheckBox_OnUnchecked" TabIndex="5"
+                    />
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Content="{x:Static translations:Resources.NamePrefix}"
+                    />
+                <TextBox
+                    x:Name="NamePrefixTextBox"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalAlignment="Left"
+                    TextChanged="NamePrefixTextBox_OnTextChanged"
+                    VerticalAlignment="Center"
+                    Width="100" TabIndex="6"
+                    />
+            </Grid>
+        </Expander>
+
+        <Popup
+            x:Name="RenamePopup"
+            StaysOpen="True"
+            Grid.Row="0"
+            Grid.RowSpan="4"
+            Placement="Center"
+            KeyDown="RenamePopup_OnKeyDown"
+            >
+            <Border
+                Background="White"
+                BorderBrush="Black"
+                BorderThickness="2"
+                Padding="20"
+                >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{x:Static translations:Resources.RenameCurrentSolidWorksProject}"/>
+                    <TextBox x:Name="NewSolidWorksProjectNameTextBox" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2"/>
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Click="RenameButton_OnClick"
+                        Content="{x:Static translations:Resources.Switch}"
+                        HorizontalAlignment="Right"
+                        />
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Click="CancelButton_OnClick"
+                        Content="{x:Static translations:Resources.Cancel}"
+                        />
+                </Grid>
+            </Border>
+        </Popup>
+    </Grid>
+</Window>

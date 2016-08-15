@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de" original="SOLIDWORKSPROJECTSWITCHER/PROPERTIES/RESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="SOLIDWORKSPROJECTSWITCHER/PROPERTIES/RESOURCES.RESX" datatype="resx">
+        <trans-unit id="Cancel" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">Abbrechen</target>
+        </trans-unit>
+        <trans-unit id="CurrentSolidWorksProject" translate="yes" xml:space="preserve">
+          <source>Current SolidWorks Project</source>
+          <target state="translated">Aktuelles SolidWorks Projekt</target>
+        </trans-unit>
+        <trans-unit id="Delete" translate="yes" xml:space="preserve">
+          <source>Delete</source>
+          <target state="translated">Löschen</target>
+        </trans-unit>
+        <trans-unit id="Name" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Name</target>
+        </trans-unit>
+        <trans-unit id="NamePrefix" translate="yes" xml:space="preserve">
+          <source>Name-prefix:</source>
+          <target state="translated">Namens-Präfix:</target>
+        </trans-unit>
+        <trans-unit id="OtherSolidWorksProjects" translate="yes" xml:space="preserve">
+          <source>Other SolidWorks projects</source>
+          <target state="translated">Andere SolidWorks Projekte</target>
+        </trans-unit>
+        <trans-unit id="RenameCurrentSolidWorksProject" translate="yes" xml:space="preserve">
+          <source>Rename current SolidWorks project:</source>
+          <target state="translated">Aktuelles SolidWorks Projekt umbenennen:</target>
+        </trans-unit>
+        <trans-unit id="Settings" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated">Einstellungen</target>
+        </trans-unit>
+        <trans-unit id="SolidWorksRunning" translate="yes" xml:space="preserve">
+          <source>SLDWorks is still running!</source>
+          <target state="translated">SLDWorks läuft noch!</target>
+        </trans-unit>
+        <trans-unit id="SolidWorksRunningInfo" translate="yes" xml:space="preserve">
+          <source>As long as SLDWorks is running the directory can not be switched or deleted.</source>
+          <target state="translated">Solange SLDWorks noch ausgeführt wird, kann der Ordner nicht gewechselt oder gelöscht werden.</target>
+        </trans-unit>
+        <trans-unit id="StartSolidWorksAfterSwitch" translate="yes" xml:space="preserve">
+          <source>Start SolidWorks after switch</source>
+          <target state="translated">SolidWorks nach Wechsel starten</target>
+        </trans-unit>
+        <trans-unit id="Switch" translate="yes" xml:space="preserve">
+          <source>Switch</source>
+          <target state="translated">Wechseln</target>
+        </trans-unit>
+        <trans-unit id="SwitchAndDelete" translate="yes" xml:space="preserve">
+          <source>Switch and delete current</source>
+          <target state="translated">Wechseln und aktuelles Verzeichnis löschen</target>
+        </trans-unit>
+        <trans-unit id="Title" translate="yes" xml:space="preserve">
+          <source>SolidWorks Project Switcher</source>
+          <target state="translated">SolidWorks Project Switcher</target>
+        </trans-unit>
+        <trans-unit id="NewSolidWorksProject" translate="yes" xml:space="preserve">
+          <source><it id="1" pos="open">&lt;New SolidWorks project&gt;</it></source>
+          <target state="translated"><it id="1" pos="open">&lt;Neues SolidWorks Projekt&gt;</it></target>
+        </trans-unit>
+        <trans-unit id="Error" translate="yes" xml:space="preserve">
+          <source>Error!</source>
+          <target state="translated">Fehler!</target>
+        </trans-unit>
+        <trans-unit id="ErrorCouldNotStartSolidWorksMessage" translate="yes" xml:space="preserve">
+          <source>Maybe the path in the configuration file "solidworkspath.ini" is incorrect!</source>
+          <target state="translated">Möglicherweise ist der Pfad in der Konfigurationsdatei "solidworkspath.ini" nicht korrekt!</target>
+        </trans-unit>
+        <trans-unit id="ErrorCouldNotStartSolidWorksTitle" translate="yes" xml:space="preserve">
+          <source>Could not start SolidWorks!</source>
+          <target state="translated">SolidWorks konnte nicht gestartet werden!</target>
+        </trans-unit>
+        <trans-unit id="ErrorDeletionFailedMessage" translate="yes" xml:space="preserve">
+          <source>%1 could not be deleted.</source>
+          <target state="translated">%1 konnte nicht gelöscht werden.</target>
+        </trans-unit>
+        <trans-unit id="ErrorDeletionFailedTitle" translate="yes" xml:space="preserve">
+          <source>Deletion failed!</source>
+          <target state="translated">Löschen fehlgeschlagen!</target>
+        </trans-unit>
+        <trans-unit id="ErrorDirectoryExistsMessage" translate="yes" xml:space="preserve">
+          <source>A directory with the given name already exists!</source>
+          <target state="translated">Es existiert bereits ein Verzeichnis mit dem eingegebenen Namen!</target>
+        </trans-unit>
+        <trans-unit id="ErrorDirectoryExistsTitle" translate="yes" xml:space="preserve">
+          <source>Directory exists</source>
+          <target state="translated">Verzeichnis extistiert bereits!</target>
+        </trans-unit>
+        <trans-unit id="ErrorDirectoryNameContainsInvalidCharacters" translate="yes" xml:space="preserve">
+          <source>Directory-name contains invalid characters!</source>
+          <target state="translated">Verzeichnisname enthält nicht erlaubte Zeichen!</target>
+        </trans-unit>
+        <trans-unit id="ErrorFileNotFound" translate="yes" xml:space="preserve">
+          <source>File not found!</source>
+          <target state="translated">Datei nicht gefunden!</target>
+        </trans-unit>
+        <trans-unit id="ErrorSelectedAssociatedDirectoryNotFound" translate="yes" xml:space="preserve">
+          <source>The directory that is associated to the selected entry could not be found!</source>
+          <target state="translated">Das Verzeichnis zu dem ausgewählten Eintrag wurde nicht gefunden!</target>
+        </trans-unit>
+        <trans-unit id="ErrorSelectedDirectoryNotFound" translate="yes" xml:space="preserve">
+          <source>The selected directory '%1' could not be found!</source>
+          <target state="translated">Das ausgewählte Verzeichnis '%1' wurde nicht gefunden!</target>
+        </trans-unit>
+        <trans-unit id="ErrorSolidWorksPathIniMissing" translate="yes" xml:space="preserve">
+          <source>Could not start SolidWorks because the configuration file "solidworkspath.ini" could not be found!</source>
+          <target state="translated">SolidWorks konnte nicht gestartet werden, da die Konfigurationsdatei "solidworkspath.ini" nicht gefunden wurde!</target>
+        </trans-unit>
+        <trans-unit id="ErrorSolidWorksProcessNameIniMissing" translate="yes" xml:space="preserve">
+          <source>Could not check if SolidWorks is running because the configuration file "solidworksprocessname.ini" was not found!
+To prevent errors, it is assumed that SolidWorks is still running.</source>
+          <target state="translated">Es konnte nicht festgestellt werden, ob SolidWorks aktiv ist, da die Konfigurationsdatei "solidworksprocessname.ini" nicht gefunden wurde!
+Um Fehlern vorzubeugen, wird davon ausgegangen, dass SolidWorks noch aktiv ist.</target>
+        </trans-unit>
+        <trans-unit id="ErrorSolidWorksProjectFile" translate="yes" xml:space="preserve">
+          <source>Reading solidworksprojectfolder.ini failed!
+Make sure the file exists and the path is correct!</source>
+          <target state="translated">Reading solidworksprojectfolder.ini failed!
+Make sure the file exists and the path is correct!</target>
+        </trans-unit>
+        <trans-unit id="ErrorSolidWorksProjectPathNotSet" translate="yes" xml:space="preserve">
+          <source>SolidWorks project folder path must be set in solidworksprojectfolder.ini!
+For example: 'C:\swlocal'</source>
+          <target state="translated">Der SolidWorks Projekt-Ordner Pfad muss in der Datei solidworksprojectfolder.ini gesetzt werden!
+Zum Beispiel: 'C:/swlocal'</target>
+        </trans-unit>
+        <trans-unit id="Unknown" translate="yes" xml:space="preserve">
+          <source><it id="1" pos="open">&lt;Unknown&gt;</it></source>
+          <target state="translated"><it id="1" pos="open">&lt;Unbekannt&gt;</it></target>
+        </trans-unit>
+        <trans-unit id="Warning" translate="yes" xml:space="preserve">
+          <source>Warning!</source>
+          <target state="translated">Achtung!</target>
+        </trans-unit>
+        <trans-unit id="WarningDeleteConfirmationMessage" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to delete "%1"?</source>
+          <target state="translated">Sind Sie sicher, dass sie das Verzeichnis "%1" löschen möchten?</target>
+        </trans-unit>
+        <trans-unit id="WarningDeleteDirectory" translate="yes" xml:space="preserve">
+          <source>Are you sure you want to delete the current %1 directory?</source>
+          <target state="translated">Sind Sie sicher, dass Sie das aktuelle %1 Verzeichnis löschen möchten?</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="CurrentSolidWorksProject" xml:space="preserve">
+    <value>Aktuelles SolidWorks Projekt</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NamePrefix" xml:space="preserve">
+    <value>Namens-Präfix:</value>
+  </data>
+  <data name="OtherSolidWorksProjects" xml:space="preserve">
+    <value>Andere SolidWorks Projekte</value>
+  </data>
+  <data name="RenameCurrentSolidWorksProject" xml:space="preserve">
+    <value>Aktuelles SolidWorks Projekt umbenennen:</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="SolidWorksRunning" xml:space="preserve">
+    <value>SLDWorks läuft noch!</value>
+  </data>
+  <data name="SolidWorksRunningInfo" xml:space="preserve">
+    <value>Solange SLDWorks noch ausgeführt wird, kann der Ordner nicht gewechselt oder gelöscht werden.</value>
+  </data>
+  <data name="StartSolidWorksAfterSwitch" xml:space="preserve">
+    <value>SolidWorks nach Wechsel starten</value>
+  </data>
+  <data name="Switch" xml:space="preserve">
+    <value>Wechseln</value>
+  </data>
+  <data name="SwitchAndDelete" xml:space="preserve">
+    <value>Wechseln und aktuelles Verzeichnis löschen</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>SolidWorks Project Switcher</value>
+  </data>
+  <data name="NewSolidWorksProject" xml:space="preserve">
+    <value>&lt;Neues SolidWorks Projekt&gt;</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fehler!</value>
+  </data>
+  <data name="ErrorCouldNotStartSolidWorksMessage" xml:space="preserve">
+    <value>Möglicherweise ist der Pfad in der Konfigurationsdatei "solidworkspath.ini" nicht korrekt!</value>
+  </data>
+  <data name="ErrorCouldNotStartSolidWorksTitle" xml:space="preserve">
+    <value>SolidWorks konnte nicht gestartet werden!</value>
+  </data>
+  <data name="ErrorDeletionFailedMessage" xml:space="preserve">
+    <value>%1 konnte nicht gelöscht werden.</value>
+  </data>
+  <data name="ErrorDeletionFailedTitle" xml:space="preserve">
+    <value>Löschen fehlgeschlagen!</value>
+  </data>
+  <data name="ErrorDirectoryExistsMessage" xml:space="preserve">
+    <value>Es existiert bereits ein Verzeichnis mit dem eingegebenen Namen!</value>
+  </data>
+  <data name="ErrorDirectoryExistsTitle" xml:space="preserve">
+    <value>Verzeichnis extistiert bereits!</value>
+  </data>
+  <data name="ErrorDirectoryNameContainsInvalidCharacters" xml:space="preserve">
+    <value>Verzeichnisname enthält nicht erlaubte Zeichen!</value>
+  </data>
+  <data name="ErrorFileNotFound" xml:space="preserve">
+    <value>Datei nicht gefunden!</value>
+  </data>
+  <data name="ErrorSelectedAssociatedDirectoryNotFound" xml:space="preserve">
+    <value>Das Verzeichnis zu dem ausgewählten Eintrag wurde nicht gefunden!</value>
+  </data>
+  <data name="ErrorSelectedDirectoryNotFound" xml:space="preserve">
+    <value>Das ausgewählte Verzeichnis '%1' wurde nicht gefunden!</value>
+  </data>
+  <data name="ErrorSolidWorksPathIniMissing" xml:space="preserve">
+    <value>SolidWorks konnte nicht gestartet werden, da die Konfigurationsdatei "solidworkspath.ini" nicht gefunden wurde!</value>
+  </data>
+  <data name="ErrorSolidWorksProcessNameIniMissing" xml:space="preserve">
+    <value>Es konnte nicht festgestellt werden, ob SolidWorks aktiv ist, da die Konfigurationsdatei "solidworksprocessname.ini" nicht gefunden wurde!
+Um Fehlern vorzubeugen, wird davon ausgegangen, dass SolidWorks noch aktiv ist.</value>
+  </data>
+  <data name="ErrorSolidWorksProjectFile" xml:space="preserve">
+    <value>Reading solidworksprojectfolder.ini failed!
+Make sure the file exists and the path is correct!</value>
+  </data>
+  <data name="ErrorSolidWorksProjectPathNotSet" xml:space="preserve">
+    <value>Der SolidWorks Projekt-Ordner Pfad muss in der Datei solidworksprojectfolder.ini gesetzt werden!
+Zum Beispiel: 'C:/swlocal'</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>&lt;Unbekannt&gt;</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Achtung!</value>
+  </data>
+  <data name="WarningDeleteConfirmationMessage" xml:space="preserve">
+    <value>Sind Sie sicher, dass sie das Verzeichnis "%1" löschen möchten?</value>
+  </data>
+  <data name="WarningDeleteDirectory" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie das aktuelle %1 Verzeichnis löschen möchten?</value>
+  </data>
+</root>
