@@ -148,6 +148,18 @@ Zum Beispiel: 'C:/swlocal'</target>
           <source>Are you sure you want to delete the current %1 directory?</source>
           <target state="translated">Sind Sie sicher, dass Sie das aktuelle %1 Verzeichnis löschen möchten?</target>
         </trans-unit>
+        <trans-unit id="DevelopedBy" translate="yes" xml:space="preserve">
+          <source>Developed by:</source>
+          <target state="translated">Entwickelt von:</target>
+        </trans-unit>
+        <trans-unit id="ViewProjectOnGitHub" translate="yes" xml:space="preserve">
+          <source>View project on GitHub</source>
+          <target state="translated">Projekt auf GitHub ansehen</target>
+        </trans-unit>
+        <trans-unit id="Info" translate="yes" xml:space="preserve">
+          <source>Info</source>
+          <target state="translated">Info</target>
+        </trans-unit>
       </group>
     </body>
   </file>

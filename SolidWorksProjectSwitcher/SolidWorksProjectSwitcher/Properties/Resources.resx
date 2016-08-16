@@ -126,6 +126,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
   </data>
+  <data name="DevelopedBy" xml:space="preserve">
+    <value>Developed by:</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Error!</value>
   </data>
@@ -174,6 +177,9 @@ Make sure the file exists and the path is correct!</value>
     <value>SolidWorks project folder path must be set in solidworksprojectfolder.ini!
 For example: 'C:\swlocal'</value>
   </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -212,6 +218,9 @@ For example: 'C:\swlocal'</value>
   </data>
   <data name="Unknown" xml:space="preserve">
     <value>&lt;Unknown&gt;</value>
+  </data>
+  <data name="ViewProjectOnGitHub" xml:space="preserve">
+    <value>View project on GitHub</value>
   </data>
   <data name="Warning" xml:space="preserve">
     <value>Warning!</value>

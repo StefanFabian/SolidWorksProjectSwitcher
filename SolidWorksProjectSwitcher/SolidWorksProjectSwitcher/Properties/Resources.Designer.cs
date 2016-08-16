@@ -88,6 +88,15 @@ namespace SolidWorksProjectSwitcher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Developed by:.
+        /// </summary>
+        public static string DevelopedBy {
+            get {
+                return ResourceManager.GetString("DevelopedBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error!.
         /// </summary>
         public static string Error {
@@ -226,6 +235,15 @@ namespace SolidWorksProjectSwitcher.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        public static string Info {
+            get {
+                return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
         public static string Name {
@@ -339,6 +357,15 @@ namespace SolidWorksProjectSwitcher.Properties {
         public static string Unknown {
             get {
                 return ResourceManager.GetString("Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View project on GitHub.
+        /// </summary>
+        public static string ViewProjectOnGitHub {
+            get {
+                return ResourceManager.GetString("ViewProjectOnGitHub", resourceCulture);
             }
         }
         

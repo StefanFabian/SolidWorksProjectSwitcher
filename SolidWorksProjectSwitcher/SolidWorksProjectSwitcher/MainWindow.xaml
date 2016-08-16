@@ -96,6 +96,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -124,6 +125,48 @@
                     VerticalAlignment="Center"
                     Width="100" TabIndex="6"
                     />
+                <GroupBox
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Header="{x:Static translations:Resources.Info}"
+                    >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Content="{x:Static translations:Resources.DevelopedBy}"
+                            />
+                        <TextBlock
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            >
+                            <Hyperlink NavigateUri="https://stefanfabian.me" RequestNavigate="Hyperlink_OnRequestNavigate">Stefan Fabian</Hyperlink>
+                        </TextBlock>
+                        <TextBlock
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            HorizontalAlignment="Center"
+                            >
+                            <Hyperlink
+                                NavigateUri="https://github.com/StefanFabian/SolidWorksProjectSwitcher"
+                                RequestNavigate="Hyperlink_OnRequestNavigate"
+                                >
+                                <Run Text="{x:Static translations:Resources.ViewProjectOnGitHub}"/>
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </GroupBox>
             </Grid>
         </Expander>
 
