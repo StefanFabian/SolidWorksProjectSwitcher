@@ -21,7 +21,7 @@ namespace SolidWorksProjectSwitcher
         private readonly string _newSolidWorksProjectEntry = Properties.Resources.NewSolidWorksProject;
         private readonly char[] _invalidCharacters = Path.GetInvalidPathChars().Concat(new[] { '\\', '/', '?', '!', ':', '*' }).ToArray();
         private readonly Dictionary<string, string> _paths = new Dictionary<string, string>();
-        private readonly FileSystemWatcher _fileSystemWatcher = new FileSystemWatcher("C:/") { IncludeSubdirectories = false };
+        private readonly FileSystemWatcher _fileSystemWatcher;
         private readonly DispatcherTimer _solidWorksCheckTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         private bool _isSolidWorksRunning;
         private readonly string _folderPath;
@@ -74,6 +74,8 @@ namespace SolidWorksProjectSwitcher
 
             FillDirectoryList();
 
+            // ReSharper disable once AssignNullToNotNullAttribute
+            _fileSystemWatcher = new FileSystemWatcher(Path.GetDirectoryName(_folderPath)) { IncludeSubdirectories = false };
             _fileSystemWatcher.Created += _fileSystemWatcher_CreatedOrDeleted;
             _fileSystemWatcher.Deleted += _fileSystemWatcher_CreatedOrDeleted;
             _fileSystemWatcher.Renamed += _fileSystemWatcher_Renamed;
@@ -101,7 +103,7 @@ namespace SolidWorksProjectSwitcher
             {
                 if (e.OldName == _folderName) UpdateWorkingDirectory();
                 if (e.Name == _folderName) UpdateWorkingDirectory();
-                else if (e.Name.StartsWith(_folderName)) UpdateNameFile(Path.Combine(e.FullPath, NameFileName), e.FullPath.Substring(10));
+                else if (e.Name.StartsWith(_folderName)) UpdateNameFile(Path.Combine(e.FullPath, NameFileName), e.FullPath.Substring(_folderPath.Length));
                 FillDirectoryList();
             }));
         }
@@ -271,7 +273,7 @@ namespace SolidWorksProjectSwitcher
             {
                 if (directoryPath.Equals(_folderPath, StringComparison.OrdinalIgnoreCase)) continue;
 
-                string name = directoryPath.Substring(10);
+                string name = directoryPath.Substring(_folderPath.Length);
                 _paths.Add(name, directoryPath);
                 DirectoriesListView.Items.Add(name);
 
