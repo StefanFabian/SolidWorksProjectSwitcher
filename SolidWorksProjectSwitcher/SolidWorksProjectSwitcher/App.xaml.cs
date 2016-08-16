@@ -17,9 +17,10 @@ namespace SolidWorksProjectSwitcher
         [STAThread]
         public static void Main(string[] args)
         {
-            var overrideCultureInfo = new CultureInfo("en-US");
-            Thread.CurrentThread.CurrentUICulture = overrideCultureInfo;
-            Thread.CurrentThread.CurrentCulture = overrideCultureInfo;
+            // For testing
+            //var overrideCultureInfo = new CultureInfo("en-US");
+            //Thread.CurrentThread.CurrentUICulture = overrideCultureInfo;
+            //Thread.CurrentThread.CurrentCulture = overrideCultureInfo;
             if (SingleInstance<App>.InitializeAsFirstInstance(UniqueName))
             {
                 var application = new App();
