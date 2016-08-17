@@ -43,7 +43,7 @@ For example:
 
 ![Image of the application][demoimage]
 
-The entries in the *Other SolidWorks projects* are folders that start with the path set in **solidworksprojectfolder.ini*.  
+The entries in the *Other SolidWorks projects* are folders that start with the path set in **solidworksprojectfolder.ini**.  
 To give you a better impression here's the folder structure on the hard drive.
 
 | Real folder | Entry |
