@@ -32,20 +32,38 @@ The default is:
 
 And finally, change the value in **solidworksprojectfolder.ini** to the folder you usually use for your projects  
 **It is very important to use only a single backslash as separator!**  
+For example:
 ####Right
 *C:\solidworksproject*
 ####Wrong
 ~~*C:\\\\solidworksproject*~~  
 ~~*C:/solidworksproject*~~
 
-
-##Usage
+##How does it work
 
 ![Image of the application][demoimage]
+
+The entries in the *Other SolidWorks projects* are folders that start with the path set in **solidworksprojectfolder.ini*.  
+To give you a better impression here's the folder structure on the hard drive.
+
+| Real folder | Entry |
+| ----------- | ----- |
+| C:\solidworksproject | _ImportantProject (Current project) |
+| C:\solidworksproject_AnotherImportantProject | _AnotherImportantProject |
+| C:\solidworksproject_prefix_ProjectWithLongerPrefixAsExmaple | _ProjectWithLongerPrefixAsExample |
+
+The name of the project in *C:\solidworksproject* is known because the folder contains a hidden file named **name.solidworksprojectswitcher.ini**.  
+This file is updated whenever you rename a folder that starts with your project folder path.  
+
+##Usage
 
 Select the project you want to switch to and click **Switch**  to switch to that project.  
 If you were working on another project before, it will ask you to enter a name for the previous project.
 The names are saved in a special ini file in the project folders. So, in most cases the application will know the previous name and suggest it.  
+The folders will be renamed to the name of your project folder as set in **solidworksprojectfolder.ini** + the project name.
+**Example:**  
+If your SolidWorks project folder is '*C:\solidworksproject*' and the name of your current project is '*_ImportantProject*' it will be renamed to:  
+*C:\solidworksproject_ImportantProject*  
 
 You can also delete the selected entry by clicking on **Delete**
 
